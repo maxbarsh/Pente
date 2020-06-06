@@ -87,6 +87,7 @@ public class PenteWindow extends JFrame {
 		setResizable(true);
 		setLocation(500,100);// put it in the middle
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // close the entire
+		setTitle("Pente");
 		
 		init();
 		setVisible(true);// set visible
