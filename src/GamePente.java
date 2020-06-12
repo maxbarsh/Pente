@@ -148,7 +148,7 @@ public class GamePente {
 		button.addActionListener(pointer);
 	}
 	/**
-	 * @author am8525 The ClickListener class is the MouseListener for the Board
+	 * 		   The ClickListener class is the MouseListener for the Board
 	 *         class. It listens for mouse clicks. Upon hearing one, it retrieves
 	 *         the location within the GridLayout of the Stone that was clicked,
 	 *         and passes that location to PenteUtil.
