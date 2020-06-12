@@ -125,13 +125,12 @@ public class PenteWindow extends JFrame {
 		JPanel btnPanel = new JPanel();
 		
 		JPanel imgPanel = new JPanel();
-		dragonImg = new ImageIcon("images/Dragon.png");
+		dragonImg = new ImageIcon(getClass().getResource("images/Dragon.png"));
 		Image image = dragonImg.getImage(); // transform it 
 		Image newImg = image.getScaledInstance(375, 375,  java.awt.Image.SCALE_SMOOTH);
 		dragonImg = new ImageIcon(newImg);
 
 		JLabel imageLabel = new JLabel("", dragonImg, JLabel.CENTER);
-		//imageLabel.setHorizontalAlignment(FlowLayout.CENTER);
 		imgPanel.add(imageLabel);
 		imgPanel.setBackground(Color.BLACK);
 		

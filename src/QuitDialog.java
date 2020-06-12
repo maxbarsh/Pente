@@ -38,7 +38,7 @@ public class QuitDialog extends JDialog {
 			contentPanel.add(label);
 			contentPanel.setBackground(new Color(222, 184, 135));
 			
-			ImageIcon sadDragon = new ImageIcon("images/sad_dragon.png");
+			ImageIcon sadDragon = new ImageIcon(getClass().getResource("images/sad_dragon.png"));
 			Image img = sadDragon.getImage();  //transform it
 			Image newImg = img.getScaledInstance(200, 200,  java.awt.Image.SCALE_SMOOTH);
 			sadDragon = new ImageIcon(newImg);

@@ -148,7 +148,7 @@ public class GamePente {
 		button.addActionListener(pointer);
 	}
 	/**
-	 * 		   The ClickListener class is the MouseListener for the Board
+	 * 				 The ClickListener class is the MouseListener for the Board
 	 *         class. It listens for mouse clicks. Upon hearing one, it retrieves
 	 *         the location within the GridLayout of the Stone that was clicked,
 	 *         and passes that location to PenteUtil.
@@ -352,7 +352,6 @@ public class GamePente {
 				}
 				if (item.getText()=="New Game") {
 					NewGameDialog ngdia = new NewGameDialog();
-					//JPanel holder = (JPanel) ngdia.getContentPane().getComponent(0);
 					ngdia.getRootPane().getDefaultButton().addActionListener(pointer);
 					
 					

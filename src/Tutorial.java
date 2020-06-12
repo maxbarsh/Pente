@@ -13,6 +13,7 @@ import javax.swing.border.EmptyBorder;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.Scanner;
 import java.awt.event.ActionEvent;
 
@@ -51,21 +52,20 @@ public class Tutorial extends JFrame {
 		scroll.setVisible(true);
 		getContentPane().add(scroll);
 		setTitle("Help");
-		{
-			File file = new File("Rules.txt");
+		{		
 			JTextArea txt = new JTextArea(30, 48);
 			txt.setEditable(false);
 			txt.setLineWrap(true);
 			txt.setBackground(new Color(222, 184, 135));
 			String str = "";
 			try {
-				Scanner in = new Scanner(file);  //read from the Rules text file 
+				Scanner in = new Scanner(this.getClass().getClassLoader().getResourceAsStream("Rules.txt"));  //read from the Rules text file 
 				while(in.hasNext()) {
 					str = str + in.nextLine() + " \n";
 				}
 				txt.setText(str);
 				in.close();
-			} catch (FileNotFoundException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 			contentPanel.add(txt);

@@ -57,7 +57,7 @@ public class NewGameDialog extends JDialog {
 			contentPanel.add(label2);
 			contentPanel.setBackground(new Color(222, 184, 135));
 			
-			ImageIcon plainDragon = new ImageIcon("images/plain_dragon.png");
+			ImageIcon plainDragon = new ImageIcon(getClass().getResource("images/plain_dragon.png"));
 			Image img = plainDragon.getImage();  //transform it
 			Image newImg = img.getScaledInstance(175, 175,  java.awt.Image.SCALE_SMOOTH);
 			plainDragon = new ImageIcon(newImg);

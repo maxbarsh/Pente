@@ -55,7 +55,7 @@ public class WinDialog extends JDialog {
 			contentPanel.add(label);
 			contentPanel.setBackground(new Color(222, 184, 135));
 			
-			ImageIcon winDragon = new ImageIcon("images/win_dragon.png");
+			ImageIcon winDragon = new ImageIcon(getClass().getResource("images/win_dragon.png"));
 			Image img = winDragon.getImage();  //transform it
 			Image newImg = img.getScaledInstance(200, 220,  java.awt.Image.SCALE_SMOOTH);
 			winDragon = new ImageIcon(newImg);
